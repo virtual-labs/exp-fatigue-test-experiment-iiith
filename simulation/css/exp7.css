@@ -1,0 +1,272 @@
+#exp_container {
+    position: relative;
+    height: 1000px;
+    width: 100%;
+}
+#con {
+  position: absolute;
+  width: 500px;
+  left: 150px;
+  top: 50px;
+  height:50px;
+}
+#botbox{
+  position:absolute;
+  background-color: white ;
+  width: 790px;
+  height:50px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+  top:650px;
+  /*left:150px;*/
+padding-left: 77px;
+}
+#bt1 {
+  position: absolute;
+  left:-96px;
+  top:5px;
+  background-color: #f1f1f1;
+  color: blue;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: right;
+}
+#bt2 {
+  position: absolute;
+  left:32px;
+  top:5px;
+  background-color: #f1f1f1;
+  color: blue;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: right;
+}
+#bt3 {
+  position: relative;
+left: 165px;
+top: -59px;
+background-color: #f1f1f1;
+color: blue;
+font-size: 16px;
+padding: 16px 30px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+text-align: right;
+}
+#im1 {
+  position: relative;
+width: 456px;
+height: 60px;
+left: -124px;
+top: 0px;
+}
+#im2{
+  position: absolute;
+  width: 20px;
+  height:20px;
+  left:-116px;
+  top:34px;
+}
+#im3{
+  position: absolute;
+  width: 20px;
+  height:20px;
+  left:41px;
+  top:34px;
+}
+#im4{
+  position: absolute;
+  width: 20px;
+  height:20px;
+  left:173px;
+  top:34px;
+
+}
+#v1{
+  position:absolute;
+  height: 900px;
+  width: 10px;
+  left:3px;
+  top:30px;
+  background-color: #555;
+}
+#v2{
+  position:absolute;
+  height: 625px;
+  width: 10px;
+  left:492px;
+  top:30px;
+  background-color: #555;
+}
+#v3{
+  position:absolute;
+  height: 900px;
+  width: 10px;
+  left:1000px;
+  top:30px;
+  background-color: #555;
+}
+#l1{
+  position:absolute;
+  height: 10px;
+  width: 1000px;
+  left:3px;
+  top:30px;
+  background-color: #555;
+}
+#l2{
+  position:absolute;
+  height: 10px;
+  width: 1000px;
+  left:3px;
+  top:645px;
+  background-color: #555;
+}
+#l3{
+  position:absolute;
+  height: 10px;
+  width: 1000px;
+  left:3px;
+  top:920px;
+  background-color: #555;
+}
+#mp{
+  position: absolute;
+  top:800px;
+  /*left:300px;*/
+  font-size: 55px;
+padding-left:57px;
+}
+#abox{
+  position: absolute;
+  height: 80px;
+  width:320px ;
+  left: 99px;
+  top: 120px;
+  background-color: lightgrey;
+}
+#bbox{
+  position: absolute;
+  height:80px;
+  width:320px ;
+  left: 99px;
+  top:270px ;
+  background-color: grey;
+}
+#cbox{
+  position: absolute;
+  height:30px;
+  width:80px ;
+  left:228px;
+  top:350px ;
+  background-color: #555;
+}
+
+#dbox{
+  position: absolute;
+  height:100px;
+  width:250px ;
+  left:136px;
+  top:530px ;
+  background-color: grey;
+}
+#yline1{
+  position: absolute;
+  height:70px;
+  width:10px ;
+  left:124px;
+  top:200px ;
+  background-color: darkblue;
+}
+#yline2{
+  position: absolute;
+  height:70px;
+  width: 10px;
+  left: 384px;
+  top: 200px;
+  background-color: darkblue;
+}
+#mobj{
+  position: absolute;
+  height:250px;
+  width:50px ;
+  left:243px;
+  top:280px ;
+  background-color: black;
+}
+#lptn{
+  position: absolute;
+  left:164px;
+  top:390px;
+  height: 65px;
+  width: 55px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+#rptn{
+  position: absolute;
+  left:307px;
+  top:390px;
+  height: 65px;
+  width: 55px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+#chartContainer{
+  position: absolute;
+  height:500px;
+  width:500px;
+  left:501px;
+  top:125px;
+}
+#para{
+  position: absolute;
+  top:140px;
+  left:239px;
+}
+#stress{
+  position: absolute;
+  left:230px;
+  top:50px;
+  color:black;
+  background-color: white;
+}
+#turn{
+  position: absolute;
+  left:230px;
+  top:100px;
+  color:black;
+  background-color: white;
+}
+#force{
+  position: absolute;
+  left:610px;
+  top:50px;
+  color:black;
+  background-color: white;
+}
+#pstress{
+  position: absolute;
+  left:298px;
+  top:37px;
+}
+#pturn{
+  position: absolute;
+  left:330px;
+  top:87px;
+}
+#pforce{
+  position: absolute;
+  left:668px;
+  top:37px;
+}
