@@ -1,1 +1,1 @@
-## Experiment name
+## Fatigue Test
