@@ -1,0 +1,17 @@
+{
+    "version": 2.0,
+    "questions": [{
+        "question": "A rod of 3.22 cm<sup>2</sup> is subjected to static mean tensile load of 44.5kN. What fatigue stress amplitude σ<sub>a</sub> will produce failure after 106 cycles? Assume σ<sub>n</sub> = 220.6 kN/m<sup>2</sup> , σ<sub>u</sub> = 415kN/m<sup>2</sup>.",
+        "answers": {
+            "a": "196.85 kN/m<sup>2</sup>",
+            "b": "146.85 kN/m<sup>2</sup>",
+            "c": "280 kN/m<sup>2</sup>",
+            "d": "725.45 kN/m<sup>2</sup>"
+        },
+        "explanations": {
+            "b": "We have σ<sub>m</sub> = 44.5/0.5 =89 kN.<br>The Goodman-Soderberg relation then give σ<sub>a</sub> = σ<sub>n</sub> – (σ<sub>n</sub> /σ<sub>u</sub>) |σ<sub>m</sub> | = 220.6 – (220.6/415) 89 = 146.85<br>thus F<sub>A</sub> = 146.85 kN/m<sup>2</sup>"
+        },
+        "correctAnswer": "b",
+        "difficulty": "advanced"
+    }]
+}
