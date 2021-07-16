@@ -1,0 +1,9 @@
+data = {
+    "colors": {
+        "strokestyle": "black",
+        "slab1c": "grey",
+        "slab2c": "black",
+        "connector": "green",
+        "bench": "#643D01"
+    }
+}
