@@ -251,6 +251,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (height === 50) {
                 updateChart();
             }
+        } else {
+            pauseButton.setAttribute("disabled", "true");
         }
 
     }
