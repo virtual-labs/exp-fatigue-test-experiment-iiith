@@ -1,7 +1,7 @@
 {
     "version": 2.0,
     "questions": [{
-            "question": "Fatigue curves are popularly known as __________ curves.",
+            "question": "1. Fatigue curves are popularly known as ____ curves.",
             "answers": {
                 "a": "S",
                 "b": "R",
@@ -15,7 +15,7 @@
             "difficulty": "beginner"
         },
         {
-            "question": "What term is used for the maximum stress at which material fail on a specified number of cycles?",
+            "question": "2. What term is used for the maximum stress at which materials fail for a specified number of cycles?",
             "answers": {
                 "a": "Fatigue strength",
                 "b": "Fatigue life",
@@ -23,13 +23,16 @@
                 "d": "Endurance limit"
             },
             "explanations": {
-                "a": "The maximum stress at which material fail on a specified number of cycles is fatigue strength. Many materials exhibit a limiting stress value. Below this, it can be operated for the indefinitely large number of cycles."
+                "a": "The maximum stress at which materials fail for a specified number of cycles is fatigue strength. Many materials exhibit a limiting stress value. Below this, it can be operated for an indefinitely large number of cycles.",
+                "b": "Fatigue life is a mechanical term that relates to how long an object or material will last before completely failing because of concentrated stresses.",
+                "c": "Ultimate tensile strength (UTS) is the maximum stress that a material can withstand while being stretched or pulled before breaking.",
+                "d": "The endurance limit (Se) of a material is defined as the stress below which a material can endure an infinite number of repeated load cycles without exhibiting failure."
             },
             "correctAnswer": "a",
             "difficulty": "intermediate"
         },
         {
-            "question": "What cycles range is chosen for endurance limit?",
+            "question": "3. What range of cycles is chosen for endurance limit?",
             "answers": {
                 "a": "10<sup>2</sup> – 10<sup>3</sup>",
                 "b": "10<sup>5</sup> – 10<sup>6</sup>",
