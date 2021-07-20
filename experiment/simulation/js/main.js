@@ -9,13 +9,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const force = [140, 130, 120, 110, 94.5, 86.6, 83.9, 76.4, 67.9, 72.4, 58.8, 46.1, 41.6, 39.4, 28.4, 37.1, 32.7, 19.8, 24];
 
     const restartButton = document.getElementById('restart');
-    restartButton.addEventListener('click', function() { restart(); });
+    restartButton.addEventListener('click', restart);
 
     const playButton = document.getElementById('play');
-    playButton.addEventListener('click', function() { play(); });
+    playButton.addEventListener('click', play);
 
     const pauseButton = document.getElementById('pause');
-    pauseButton.addEventListener('click', function() { pause(); });
+    pauseButton.addEventListener('click', pause);
 
     const slider = document.getElementById('speed');
     const output = document.getElementById('demo_speed');
@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function drawObject(ctx, obj, color) {
         ctx.save();
         ctx.fillStyle = color;
-        ctx.strokeStyle = data.colors.strokestyle;
+        ctx.strokeStyle = data.colors.black;
         ctx.beginPath();
         ctx.moveTo(obj[0][0], obj[0][1]);
 
@@ -78,8 +78,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let tmHandle;
     let chart;
-    let step = 0;
-    let flag = 1;
+    let step;
+    let flag;
 
     const canvas = document.getElementById("main");
     canvas.width = 900;
@@ -131,51 +131,23 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
 
-    let height = 100;
+    let height;
+    setAll();
 
     const midHeight = 150;
     const width = 160;
 
-    let mid = [
-        [topX, topY + topHeight + height],
-        [topX, topY + topHeight + height + midHeight],
-        [topX + topWidth, topY + topHeight + height + midHeight],
-        [topX + topWidth, topY + topHeight + height],
-    ];
-
-    let mid2 = [
-        [topX + topWidth / 2 - width / 2, topY + topHeight + height + midHeight],
-        [topX + topWidth / 2 - width / 2, topY + topHeight + height + midHeight + 60],
-        [topX + topWidth / 2 + width / 2, topY + topHeight + height + midHeight + 60],
-        [topX + topWidth / 2 + width / 2, topY + topHeight + height + midHeight],
-    ];
-
+    let mid;
+    let mid2;
 
     const connecter1Width = 100;
-    let connector1 = [
-        [topX + topWidth / 2 - connecter1Width / 2, topY + topHeight + height + midHeight + 60],
-        [topX + topWidth / 2 - connecter1Width / 2, firstSlabY],
-        [topX + topWidth / 2 + connecter1Width / 2, firstSlabY],
-        [topX + topWidth / 2 + connecter1Width / 2, topY + topHeight + height + midHeight + 60],
-    ];
-
+    let connector1;
     const connecter2Width = 20;
-    let connector2a = [
-        [topX + topWidth / 2 - 200, topY + topHeight],
-        [topX + topWidth / 2 - 200 + connecter2Width, topY + topHeight],
-        [topX + topWidth / 2 - 200 + connecter2Width, topY + topHeight + height],
-        [topX + topWidth / 2 - 200, topY + topHeight + height],
-    ];
-
-    let connector2b = [
-        [topX + topWidth / 2 + 200, topY + topHeight],
-        [topX + topWidth / 2 + 200 + connecter2Width, topY + topHeight],
-        [topX + topWidth / 2 + 200 + connecter2Width, topY + topHeight + height],
-        [topX + topWidth / 2 + 200, topY + topHeight + height],
-    ];
+    let connector2a;
+    let connector2b;
 
 
-    setAll();
+
     drawStatic();
     graph();
 
@@ -184,34 +156,6 @@ document.addEventListener('DOMContentLoaded', function() {
         ctx.lineWidth = lineWidth;
         ctx.lineCap = "round";
         ctx.lineJoin = "round";
-
-        drawObject(ctx, base, data.colors.bench);
-        drawObject(ctx, firstSlab, data.colors.slab1c);
-        drawObject(ctx, top, data.colors.slab1c);
-        drawObject(ctx, mid, data.colors.slab2c);
-        drawObject(ctx, mid2, data.colors.slab1c);
-        drawObject(ctx, connector1, data.colors.slab2c);
-        drawObject(ctx, connector2a, data.colors.connector);
-        drawObject(ctx, connector2b, data.colors.connector);
-        ctx.font = "50px Arial";
-
-        ctx.fillText("Fatigue Test Machine", 200, 50);
-        if (step !== 0) {
-            ctx.fillText(cycles[step - 1], 400, 200);
-        }
-
-    }
-
-
-
-    function draw() {
-
-        drawStatic();
-        height += flag;
-        if (height === 50 || height === 150) {
-            flag = -1 * flag;
-        }
-
 
         mid = [
             [topX, topY + topHeight + height],
@@ -246,6 +190,32 @@ document.addEventListener('DOMContentLoaded', function() {
             [topX + topWidth / 2 + 200 + connecter2Width, topY + topHeight + height],
             [topX + topWidth / 2 + 200, topY + topHeight + height],
         ];
+
+        drawObject(ctx, base, data.colors.bench);
+        drawObject(ctx, firstSlab, data.colors.slab1c);
+        drawObject(ctx, top, data.colors.slab1c);
+        drawObject(ctx, mid, data.colors.black);
+        drawObject(ctx, mid2, data.colors.slab1c);
+        drawObject(ctx, connector1, data.colors.black);
+        drawObject(ctx, connector2a, data.colors.connector);
+        drawObject(ctx, connector2b, data.colors.connector);
+        ctx.font = "50px Arial";
+
+        ctx.fillText("Fatigue Test Machine", 200, 50);
+        if (step !== 0) {
+            ctx.fillText(cycles[step - 1], 400, 200);
+        }
+
+    }
+
+
+
+    function draw() {
+        height += flag;
+        if (height === 50 || height === 150) {
+            flag = -1 * flag;
+        }
+        drawStatic();
         if (step < cycles.length) {
             tmHandle = window.setTimeout(draw, 250 / fps);
             if (height === 50) {
