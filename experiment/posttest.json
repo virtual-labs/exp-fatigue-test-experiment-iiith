@@ -9,7 +9,10 @@
             "d": "725.45 kN/m<sup>2</sup>"
         },
         "explanations": {
-            "b": "We have σ<sub>m</sub> = 44.5/0.5 = 89 kN.<br>The Goodman-Soderberg relation then gives σ<sub>a</sub> = σ<sub>n</sub> – (σ<sub>n</sub> /σ<sub>u</sub>) |σ<sub>m</sub> | = 220.6 – (220.6/415) 89 = 146.85<br>thus F<sub>A</sub> = 146.85 kN/m<sup>2</sup>"
+            "a": "We have σ<sub>m</sub> = 44.5/0.5 = 89 kN.<br>The Goodman-Soderberg relation then gives σ<sub>a</sub> = σ<sub>n</sub> – (σ<sub>n</sub> /σ<sub>u</sub>) |σ<sub>m</sub> |",
+            "b": "We have σ<sub>m</sub> = 44.5/0.5 = 89 kN.<br>The Goodman-Soderberg relation then gives σ<sub>a</sub> = σ<sub>n</sub> – (σ<sub>n</sub> /σ<sub>u</sub>) |σ<sub>m</sub> | = 220.6 – (220.6/415) 89 = 146.85<br>thus F<sub>A</sub> = 146.85 kN/m<sup>2</sup>",
+            "c": "We have σ<sub>m</sub> = 44.5/0.5 = 89 kN.<br>The Goodman-Soderberg relation then gives σ<sub>a</sub> = σ<sub>n</sub> – (σ<sub>n</sub> /σ<sub>u</sub>) |σ<sub>m</sub> |",
+            "d": "We have σ<sub>m</sub> = 44.5/0.5 = 89 kN.<br>The Goodman-Soderberg relation then gives σ<sub>a</sub> = σ<sub>n</sub> – (σ<sub>n</sub> /σ<sub>u</sub>) |σ<sub>m</sub> |"
         },
         "correctAnswer": "b",
         "difficulty": "advanced"
