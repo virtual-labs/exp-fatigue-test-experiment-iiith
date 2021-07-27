@@ -1,0 +1,50 @@
+{
+    "version": 2.0,
+    "questions": [{
+            "question": "1. Fatigue curves are popularly known as ____ curves.",
+            "answers": {
+                "a": "S",
+                "b": "R",
+                "c": "N",
+                "d": "S-N"
+            },
+            "explanations": {
+                "d": "Fatigue curves are popularly known as S-N curves. S stands for stress and N stands for the number of cycles. The number of cycles is taken as log N."
+            },
+            "correctAnswer": "d",
+            "difficulty": "beginner"
+        },
+        {
+            "question": "2. What term is used for the maximum stress at which materials fail for a specified number of cycles?",
+            "answers": {
+                "a": "Fatigue strength",
+                "b": "Fatigue life",
+                "c": "Ultimate tensile strength",
+                "d": "Endurance limit"
+            },
+            "explanations": {
+                "a": "The maximum stress at which materials fail for a specified number of cycles is fatigue strength. Many materials exhibit a limiting stress value. Below this, it can be operated for an indefinitely large number of cycles.",
+                "b": "Fatigue life is a mechanical term that relates to how long an object or material will last before completely failing because of concentrated stresses.",
+                "c": "Ultimate tensile strength (UTS) is the maximum stress that a material can withstand while being stretched or pulled before breaking.",
+                "d": "The endurance limit (Se) of a material is defined as the stress below which a material can endure an infinite number of repeated load cycles without exhibiting failure."
+            },
+            "correctAnswer": "a",
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "3. What range of cycles is chosen for endurance limit?",
+            "answers": {
+                "a": "10<sup>2</sup> – 10<sup>3</sup>",
+                "b": "10<sup>5</sup> – 10<sup>6</sup>",
+                "c": "10<sup>7</sup> – 10<sup>8</sup>",
+                "d": "10<sup>11</sup> – 10<sup>12</sup>"
+            },
+            "explanations": {
+                "c": "In nonferrous materials, non-effective fatigue limit is shown. The stress corresponding to 10<sup>7</sup> – 10<sup>8</sup> cycles is taken as endurance limit."
+            },
+            "correctAnswer": "c",
+            "difficulty": "beginner"
+        }
+
+    ]
+}
