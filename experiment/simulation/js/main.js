@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // RAW DATA USED IN THE SIMULATION
 
     const stress = [295.4, 275.5, 253.6, 233.6, 199.4, 182.8, 177, 121, 112.8, 117.3, 102.9, 86.66, 80.17, 76.68, 57.94, 73.07, 65.65, 41.41, 49.67];
-    const cycles = [133, 176, 200, 280, 350, 380, 444, 876, 907, 1708, 3000, 6690, 9750, 15990, 43560, 60150, 63300, 141300, 166560];
+    const cycles = ["133", "176", "200", "280", "350", "380", "444", "876", "907", "1708", "3000", "6690", "9750", "15990", "43560", "60150", "63300", "141300", "166560"];
     const force = [140, 130, 120, 110, 94.5, 86.6, 83.9, 76.4, 67.9, 72.4, 58.8, 46.1, 41.6, 39.4, 28.4, 37.1, 32.7, 19.8, 24];
 
     const restartButton = document.getElementById('restart');
@@ -31,9 +31,9 @@ document.addEventListener('DOMContentLoaded', function() {
         flag = 1;
         step = 0;
 
-        document.getElementById("stress").innerHTML = "0.0 Mpa";
+        document.getElementById("stress").innerHTML = "0.0";
         document.getElementById("cycles").innerHTML = "0";
-        document.getElementById("force").innerHTML = "0.0 N";
+        document.getElementById("force").innerHTML = "0.0";
 
     }
 
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const canvas = document.getElementById("main");
     canvas.width = 900;
     canvas.height = 1200;
-    canvas.style = "border:3px solid;";
+    // canvas.style = "border:3px solid;";
     const ctx = canvas.getContext("2d");
 
     const lineWidth = 1.5;
@@ -258,9 +258,9 @@ document.addEventListener('DOMContentLoaded', function() {
         let x = Math.log(cycles[step]);
         let y = Math.log(stress[step]);
 
-        document.getElementById("stress").innerHTML = stress[step].toString() + " Mpa";
+        document.getElementById("stress").innerHTML = stress[step].toString();
         document.getElementById("cycles").innerHTML = cycles[step].toString();
-        document.getElementById("force").innerHTML = force[step].toString() + " N";
+        document.getElementById("force").innerHTML = force[step].toString();
         if (step < cycles.length) {
             chart[0]['x'].push(x);
             chart[0]['y'].push(y);

@@ -7,51 +7,94 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.6-b/css/style.min.css" />
     <link rel="stylesheet" href="./css/main.css">
 </head>
-
-<div class="columns is-centered">
-    <div class="column has-text-centered mt-2">
-        <button id="play" class="v-button">Play</button>
-        <button id="pause" class="v-button" disabled>Pause</button>
-        <button id="restart" class="v-button" disabled>Restart</button>
-    </div>
-</div>
-
-<div class="box">
-    <div class="columns is-centered">
-        <div class="column has-text-centered is-two-fifths">
-            <canvas class="main v-canvas-container" id="main"></canvas>
-            <p>Simulation speed: <span id="demo_speed"></span>x</p>
-            <input type="range" min="1" max="8" value="4" class="slider" id="speed">
+<body>
+    <div id="box">
+        <div class="columns is-centered is-flex">
+            <div class="column mt-2 is-10-desktop is-10-tablet is-10-mobile has-text-centered">
+                <div class="columns is-mobile is-centered is-flex">
+                    <div id="anime-demo" class="column has-text-centered controls">
+                        <button id="play" class="v-button">Play</button>
+                        <button id="pause" class="v-button" disabled>Pause</button>
+                        <button id="restart" class="v-button" disabled>Restart</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="column has-text-centered">
-            <div class="v-table-wrap">
-                <table class="table is-bordered is-fullwidth v-table-primary mb-2">
-                    <thead>
+        <div class="columns is-centered is-variable is-flex is-flex-wrap-wrap workspace">
+            <div id="apparatus" class="column has-text-centered is-3-desktop is-5-tablet is-5-mobile apparatus">
+                <div class="v-datalist-container">
+                    <div class="v-datalist-title" >Input Parameters</div>
+                    <br/>
+                    <p>Simulation speed: <span id="demo_speed"></span>x</p>
+                    <input type="range" min="1" max="8" value="4" class="slider" id="speed">
+                    <br/>
+                        <p class="v-bold">Length of Rod = 80mm</p><br/>
+                        <p class="v-bold">Diameter of Rod = 6mm</p><br/>
+                        <p class="v-bold">Polar MOI = 1.272e-10 m<sup>4</sup></p><br/>
+                        <p class="v-bold">Modulus of Rigidity = 29.473 GPa</p>
+                    
+                </div>
+            </div>
+            
+            <div  class="column has-text-centered is-3-desktop is-5-tablet is-5-mobile observations">
+                <div class="v-datalist-container ">
+                    <div class="v-datalist-title">Observations</div>
+                        <div class="v-datalist-row" id="obs-table">
+                        <!-- <div class="v-datalist-row v-bold">Length of Rod = 80mm</div>
+                        <div class="v-datalist-row v-bold">Diameter of Rod = 6mm</div>
+                        <div class="v-datalist-row v-bold">Polar MOI = 1.27235e-10 m<sup>4</sup></div>
+                        <div class="v-datalist-row v-bold">Modulus of Rigidity = 29.473138 GPa</div> -->
+                        <div class="v-table-wrap">
+                            <table class="table is-bordered is-fullwidth v-table-primary mb-2 has-text-centered">
+                                <thead>
                         <tr>
                             <th>Number of Cycles(N)</th>
-                            <th>Force</th>
-                            <th>Stress</th>
+                            <th>Force (Newton)</th>
+                            <th>Stress (Mpa)</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td id="cycles">0</td>
-                            <td id="force">0.0 N</td>
-                            <td id="stress">0.0 Mpa</td>
+                            <td id="force">0.0</td>
+                            <td id="stress">0.0</td>
                         </tr>
                     </tbody>
-                </table>
+                            </table>
+                        </div>
+                        <div id="result"></div>
+                    </div>
+                    <div class="v-datalist-row ">
+                        <div class="v-table-wrap">
+                            <div class="column has-text-centered">
+                                <div id="chartContainer" class="mt-0"></div>
+                            </div>
+                        </div>         
+
+                    </div>
+                </div>
             </div>
-            <div>
-                <div id="chartContainer"></div>
+
+            <div class="column has-text-centered is-5-desktop is-10-tablet is-10-mobile simulation" id="container">
+                <div class="v-datalist-container">
+                    <div class="columns">
+                        <div class="column has-text-centered ">
+                            <canvas class="main" id="main"></canvas>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
+ 
 <script src='https://cdn.plot.ly/plotly-2.2.0.min.js'></script>
 <script src="./js/data.json"></script>
 <script src="./js/main.js"></script>
+
 </body>
 
 </html>
+
+
+
+
