@@ -1,50 +1,158 @@
 {
-    "version": 2.0,
-    "questions": [{
-            "question": "1. Fatigue curves are popularly known as ____ curves.",
-            "answers": {
-                "a": "S",
-                "b": "R",
-                "c": "N",
-                "d": "S-N"
-            },
-            "explanations": {
-                "d": "Fatigue curves are popularly known as S-N curves. S stands for stress and N stands for the number of cycles. The number of cycles is taken as log N."
-            },
-            "correctAnswer": "d",
-            "difficulty": "beginner"
-        },
-        {
-            "question": "2. What term is used for the maximum stress at which materials fail for a specified number of cycles?",
-            "answers": {
-                "a": "Fatigue strength",
-                "b": "Fatigue life",
-                "c": "Ultimate tensile strength",
-                "d": "Endurance limit"
-            },
-            "explanations": {
-                "a": "The maximum stress at which materials fail for a specified number of cycles is fatigue strength. Many materials exhibit a limiting stress value. Below this, it can be operated for an indefinitely large number of cycles.",
-                "b": "Fatigue life is a mechanical term that relates to how long an object or material will last before completely failing because of concentrated stresses.",
-                "c": "Ultimate tensile strength (UTS) is the maximum stress that a material can withstand while being stretched or pulled before breaking.",
-                "d": "The endurance limit (Se) of a material is defined as the stress below which a material can endure an infinite number of repeated load cycles without exhibiting failure."
-            },
-            "correctAnswer": "a",
-            "difficulty": "intermediate"
-        },
-        {
-            "question": "3. What range of cycles is chosen for endurance limit?",
-            "answers": {
-                "a": "10<sup>2</sup> – 10<sup>3</sup>",
-                "b": "10<sup>5</sup> – 10<sup>6</sup>",
-                "c": "10<sup>7</sup> – 10<sup>8</sup>",
-                "d": "10<sup>11</sup> – 10<sup>12</sup>"
-            },
-            "explanations": {
-                "c": "In nonferrous materials, non-effective fatigue limit is shown. The stress corresponding to 10<sup>7</sup> – 10<sup>8</sup> cycles is taken as endurance limit."
-            },
-            "correctAnswer": "c",
-            "difficulty": "beginner"
-        }
-
-    ]
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. Fatigue curves are commonly known as ____ curves.",
+      "answers": {
+        "a": "S",
+        "b": "R",
+        "c": "N",
+        "d": "S–N"
+      },
+      "explanations": {
+        "a": "Incorrect. 'S' alone does not represent the fatigue curve.",
+        "b": "Incorrect. 'R' is not used to describe fatigue curves.",
+        "c": "Incorrect. 'N' alone represents only the number of cycles.",
+        "d": "Correct. Fatigue behaviour is represented using the S–N (Stress–Number of Cycles) curve."
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Fatigue failure occurs primarily due to ____.",
+      "answers": {
+        "a": "Repeated cyclic loading",
+        "b": "Single impact loading",
+        "c": "Static compression only",
+        "d": "High temperature alone"
+      },
+      "explanations": {
+        "a": "Correct. Fatigue failure results from repeated cyclic loading over time.",
+        "b": "Incorrect. A single impact does not represent fatigue loading.",
+        "c": "Incorrect. Static compression alone does not cause fatigue.",
+        "d": "Incorrect. High temperature affects creep rather than fatigue."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. The endurance limit of a material is the stress below which the material can withstand ____.",
+      "answers": {
+        "a": "Only one loading cycle",
+        "b": "A finite number of loading cycles",
+        "c": "An indefinitely large number of loading cycles without failure",
+        "d": "Only compressive loading"
+      },
+      "explanations": {
+        "a": "Incorrect. The endurance limit is not related to a single cycle.",
+        "b": "Incorrect. Fatigue strength refers to a specified finite number of cycles.",
+        "c": "Correct. The endurance limit is the stress below which the material can endure an indefinitely large number of cycles.",
+        "d": "Incorrect. The endurance limit is not restricted to compressive loading."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. During a rotating bending fatigue test, the surface of the specimen experiences ____.",
+      "answers": {
+        "a": "Only tensile stress",
+        "b": "Only compressive stress",
+        "c": "Alternating tensile and compressive stresses",
+        "d": "No stress"
+      },
+      "explanations": {
+        "a": "Incorrect. The stress changes during rotation.",
+        "b": "Incorrect. The stress alternates during rotation.",
+        "c": "Correct. Rotation causes each surface to experience alternating tensile and compressive stresses.",
+        "d": "Incorrect. The specimen is continuously stressed during the test."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. Which graph is obtained from a fatigue test?",
+      "answers": {
+        "a": "Stress–Strain",
+        "b": "Load–Extension",
+        "c": "S–N",
+        "d": "Torque–Twist"
+      },
+      "explanations": {
+        "a": "Incorrect. Stress–strain curves are obtained from tensile tests.",
+        "b": "Incorrect. Load–extension graphs are obtained during tensile testing.",
+        "c": "Correct. Fatigue behaviour is represented by the S–N curve.",
+        "d": "Incorrect. Torque–twist graphs are obtained from torsion tests."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. Which quantity is recorded at the end of the fatigue test?",
+      "answers": {
+        "a": "Young's modulus",
+        "b": "Number of cycles to failure",
+        "c": "Hardness number",
+        "d": "Poisson's ratio"
+      },
+      "explanations": {
+        "a": "Incorrect. Young's modulus is determined from tensile testing.",
+        "b": "Correct. The fatigue machine records the number of cycles until failure.",
+        "c": "Incorrect. Hardness is measured using hardness tests.",
+        "d": "Incorrect. Poisson's ratio is not measured in this experiment."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. Fatigue failure usually begins with ____.",
+      "answers": {
+        "a": "Buckling",
+        "b": "Crack initiation",
+        "c": "Melting",
+        "d": "Corrosion"
+      },
+      "explanations": {
+        "a": "Incorrect. Buckling is a different failure mode.",
+        "b": "Correct. Fatigue failure begins with microscopic crack initiation.",
+        "c": "Incorrect. Melting is unrelated to fatigue.",
+        "d": "Incorrect. Corrosion may accelerate fatigue but does not define its initiation."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. Which factor generally increases fatigue life?",
+      "answers": {
+        "a": "Poor surface finish",
+        "b": "Stress concentration",
+        "c": "Smooth surface finish",
+        "d": "Sharp notches"
+      },
+      "explanations": {
+        "a": "Incorrect. Rough surfaces reduce fatigue life.",
+        "b": "Incorrect. Stress concentration accelerates crack initiation.",
+        "c": "Correct. A smoother surface delays crack initiation and improves fatigue life.",
+        "d": "Incorrect. Sharp notches reduce fatigue strength."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. Fatigue fracture generally occurs ____.",
+      "answers": {
+        "a": "Without significant plastic deformation",
+        "b": "Only after melting",
+        "c": "Only under compressive loading",
+        "d": "Immediately after yielding"
+      },
+      "explanations": {
+        "a": "Correct. Fatigue failure often occurs suddenly with little visible deformation.",
+        "b": "Incorrect. Melting is unrelated to fatigue failure.",
+        "c": "Incorrect. Fatigue is associated with cyclic loading.",
+        "d": "Incorrect. Fatigue failure may occur below the yield strength."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    }
+  ]
 }
