@@ -13,9 +13,15 @@
 1. Start the experiment by clicking the **Play** button.
 2. Observe the rotating beam fatigue test, in which the circular specimen rotates under a constant bending load.
 3. Notice that, during each rotation, the outer surface of the specimen experiences alternating tensile and compressive bending stresses.
-4. Observe the values of applied force, stress, and number of loading cycles displayed during the simulation.
-5. Observe the graph plotted between **log(Stress)** and **log(Number of Cycles)** to understand the fatigue behaviour of the material.
-6. Use the **Pause**, **Play**, and **Restart** controls to view the different stages of the experiment.
+4. Observe the live values of **Number of Cycles**, **Force**, and **Stress** in the **Observations** table.
+5. Observe the **Cycle Counter** and **Status** shown in the **Input Parameters** panel.
+6. Observe the graph plotted between **Stress (MPa)** and **log(Number of Cycles)** to understand fatigue behaviour.
+7. **Pause** temporarily stops the running simulation.
+8. **Play** continues the simulation from the paused state.
+9. **Restart** resets the simulation to the initial page-load state (values reset; simulation does not auto-run).
+10. After specimen failure, the simulation automatically shows a **Simulation Summary** page.
+11. In the summary page, review final result details (**Stress**, **Cycles to Failure**, and **log(N)**), full observation table, and the final graph trace carried from the live simulation.
+12. Click **Restart** from the top control bar to return to the initial state and run the experiment again.
 
 **Note:** The specimen dimensions shown in the simulation (Length = 80 mm and Diameter = 6 mm) are example values used for demonstration. In practice, rotating beam fatigue specimens are manufactured according to standard specimen geometries specified in fatigue testing standards.
 

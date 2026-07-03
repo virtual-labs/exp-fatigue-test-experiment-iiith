@@ -13,12 +13,46 @@
   background-color: white;
 }
 
-#chartContainer{
-	height: 55vh;
-	width: 100%;
+.status-box {
+  margin: 0.75rem auto 0;
+  width: 100%;
+  text-align: left;
+  background-color: #f8fbff;
+  border-left: 3px solid #3273dc;
+  padding: 0.5rem 0.75rem;
+  min-height: 2.2rem;
 }
-.v-table-wrap{
-	overflow-y: auto !important;
+
+.apparatus-status {
+  margin-top: 1rem;
+}
+
+#status-text {
+  margin-left: 0.5rem;
+}
+
+#cycle-counter {
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+
+.summary-box {
+  background-color: #f8fbff;
+  border-left: 3px solid #3273dc;
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+}
+
+.summary-box p {
+  margin-bottom: 0.35rem;
+}
+
+#chartContainer {
+  height: 55vh;
+  width: 100%;
+}
+.v-table-wrap {
+  overflow-y: auto !important;
 }
 
 /*table.table{
@@ -32,33 +66,48 @@
 	margin-top: 20px;
 }*/
 
-#chartContainer{
-	height: 65vh;
-	width: 100% ;
+#chartContainer {
+  height: 65vh;
+  width: 100%;
+}
+
+#completion-chartContainer {
+  height: 55vh;
+  width: 100%;
+}
+
+.completion-container {
+  min-height: auto;
+  height: auto;
+  padding-bottom: 1rem;
+}
+
+.is-hidden {
+  display: none;
 }
 
 .apparatus {
-	order: 1;
+  order: 1;
 }
 
 .simulation {
-	order: 2;
+  order: 2;
 }
 
 .observations {
-	order: 3;
+  order: 3;
 }
 
 @media screen and (max-width: 1023px) {
-	.apparatus {
-		order: 1;
-	}
+  .apparatus {
+    order: 1;
+  }
 
-	.simulation {
-		order: 3;
-	}
+  .simulation {
+    order: 3;
+  }
 
-	.observations {
-		order: 2;
-	}
+  .observations {
+    order: 2;
+  }
 }

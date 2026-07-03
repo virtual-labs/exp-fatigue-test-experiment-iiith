@@ -59,12 +59,12 @@ Because crack growth is gradual but final fracture is sudden, fatigue failures a
 
 ### Mathematical Representation
 
-The fatigue behaviour of a material is represented using the **S–N curve**, which relates the applied stress amplitude to the number of cycles required for failure.
+The fatigue behaviour of a material is represented using the **S-N curve**, which relates the applied stress amplitude to the number of cycles required for failure.
 
 Where,
 
-- \(S\) = Stress amplitude
-- \(N\) = Number of cycles to failure
+- $S$ = Stress amplitude
+- $N$ = Number of cycles to failure
 
 As the applied stress decreases, the fatigue life generally increases.
 
@@ -75,10 +75,10 @@ Many steels exhibit an **endurance limit**, below which fatigue failure does not
 The virtual fatigue testing machine demonstrates the working principle of a rotating beam fatigue test. During the simulation, students observe
 
 - alternating bending stresses,
-- applied force,
-- stress developed in the specimen,
-- number of loading cycles,
-- corresponding S–N relationship.
+- live values of force, stress, and cycles,
+- cycle counter and status updates,
+- graph of Stress (MPa) versus log(Number of Cycles),
+- final simulation summary page with detailed results.
 
 The simulation illustrates how cyclic loading gradually leads to fatigue failure.
 
