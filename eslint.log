@@ -1,0 +1,19 @@
+
+/home/runner/work/exp-fatigue-test-experiment-iiith/exp-fatigue-test-experiment-iiith/experiment/simulation/js/main.js
+  109:23  warning  'data' is not defined            no-undef
+  245:27  warning  'data' is not defined            no-undef
+  246:32  warning  'data' is not defined            no-undef
+  247:26  warning  'data' is not defined            no-undef
+  248:26  warning  'data' is not defined            no-undef
+  249:27  warning  'data' is not defined            no-undef
+  250:33  warning  'data' is not defined            no-undef
+  251:34  warning  'data' is not defined            no-undef
+  252:34  warning  'data' is not defined            no-undef
+  326:5   warning  'Plotly' is not defined          no-undef
+  326:20  warning  'chartContainer' is not defined  no-undef
+  340:7   warning  'Plotly' is not defined          no-undef
+  340:21  warning  'chartContainer' is not defined  no-undef
+  393:5   warning  'Plotly' is not defined          no-undef
+
+✖ 14 problems (0 errors, 14 warnings)
+

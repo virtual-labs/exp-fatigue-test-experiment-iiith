@@ -1,0 +1,158 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. During a fatigue test, the specimen is subjected to ____ loading.",
+      "answers": {
+        "a": "Static",
+        "b": "Cyclic",
+        "c": "Impact",
+        "d": "Thermal"
+      },
+      "explanations": {
+        "a": "Incorrect. Static loading does not represent fatigue loading.",
+        "b": "Correct. Fatigue testing involves repeated or cyclic loading of the specimen.",
+        "c": "Incorrect. Impact loading is associated with impact testing, not fatigue testing.",
+        "d": "Incorrect. Thermal loading alone does not define a fatigue test."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. In a rotating bending fatigue test, each point on the specimen surface experiences ____.",
+      "answers": {
+        "a": "Only tensile stress",
+        "b": "Only compressive stress",
+        "c": "Alternating tensile and compressive stresses",
+        "d": "No stress"
+      },
+      "explanations": {
+        "a": "Incorrect. The stress changes as the specimen rotates.",
+        "b": "Incorrect. The stress alternates during each rotation.",
+        "c": "Correct. Rotation causes each surface to alternately experience tensile and compressive stresses.",
+        "d": "Incorrect. The specimen is continuously subjected to bending stresses."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Which quantity is recorded when the fatigue specimen fractures?",
+      "answers": {
+        "a": "Number of cycles to failure",
+        "b": "Young's modulus",
+        "c": "Poisson's ratio",
+        "d": "Hardness number"
+      },
+      "explanations": {
+        "a": "Correct. The fatigue machine records the total number of cycles completed before failure.",
+        "b": "Incorrect. Young's modulus is determined from a tensile test.",
+        "c": "Incorrect. Poisson's ratio is not measured during a fatigue test.",
+        "d": "Incorrect. Hardness is measured using hardness testing methods."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. If the applied stress amplitude is increased, the fatigue life of the specimen generally ____.",
+      "answers": {
+        "a": "Increases",
+        "b": "Remains unchanged",
+        "c": "Decreases",
+        "d": "Becomes infinite"
+      },
+      "explanations": {
+        "a": "Incorrect. Higher cyclic stresses reduce fatigue life.",
+        "b": "Incorrect. Fatigue life depends strongly on the applied stress amplitude.",
+        "c": "Correct. Increasing the stress amplitude generally reduces the number of cycles to failure.",
+        "d": "Incorrect. Increasing stress does not produce infinite fatigue life."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. The S–N curve relates the applied stress to the ____.",
+      "answers": {
+        "a": "Specimen diameter",
+        "b": "Number of cycles to failure",
+        "c": "Young's modulus",
+        "d": "Temperature"
+      },
+      "explanations": {
+        "a": "Incorrect. Specimen diameter is not represented on the S–N curve.",
+        "b": "Correct. The S–N curve shows the relationship between stress and the number of cycles to failure.",
+        "c": "Incorrect. Young's modulus is not obtained from the S–N curve.",
+        "d": "Incorrect. Temperature is not plotted on the S–N curve."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. The endurance limit of a material represents the stress below which the material can withstand ____.",
+      "answers": {
+        "a": "Only one loading cycle",
+        "b": "A specified impact load",
+        "c": "An indefinitely large number of loading cycles without failure",
+        "d": "Only compressive loading"
+      },
+      "explanations": {
+        "a": "Incorrect. The endurance limit is not related to a single loading cycle.",
+        "b": "Incorrect. Impact loading is unrelated to the endurance limit.",
+        "c": "Correct. The endurance limit is the maximum stress below which fatigue failure does not occur even after an indefinitely large number of cycles.",
+        "d": "Incorrect. The endurance limit is not restricted to compressive loading."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. Fatigue failure generally occurs due to the ____.",
+      "answers": {
+        "a": "Instantaneous yielding of the entire specimen",
+        "b": "Gradual initiation and propagation of cracks under cyclic loading",
+        "c": "Melting of the material",
+        "d": "Sudden increase in temperature"
+      },
+      "explanations": {
+        "a": "Incorrect. Fatigue failure is progressive rather than instantaneous.",
+        "b": "Correct. Fatigue failure occurs through crack initiation followed by gradual crack propagation until final fracture.",
+        "c": "Incorrect. Melting is unrelated to fatigue failure.",
+        "d": "Incorrect. Temperature alone does not define fatigue failure."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. Which of the following generally improves the fatigue life of a component?",
+      "answers": {
+        "a": "Sharp notches",
+        "b": "Poor surface finish",
+        "c": "Smooth surface finish",
+        "d": "High stress concentration"
+      },
+      "explanations": {
+        "a": "Incorrect. Sharp notches increase stress concentration and reduce fatigue life.",
+        "b": "Incorrect. Rough surfaces promote crack initiation.",
+        "c": "Correct. A smooth surface delays crack initiation and generally improves fatigue life.",
+        "d": "Incorrect. High stress concentration reduces fatigue strength."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. Which of the following engineering components is most likely to fail due to fatigue?",
+      "answers": {
+        "a": "A stationary concrete block carrying a constant load",
+        "b": "A rotating crankshaft in an automobile engine",
+        "c": "A brick resting on the ground",
+        "d": "A water storage tank under no fluctuating load"
+      },
+      "explanations": {
+        "a": "Incorrect. Constant static loading is not the primary cause of fatigue failure.",
+        "b": "Correct. Rotating crankshafts experience repeated cyclic stresses and are common examples of fatigue-critical components.",
+        "c": "Incorrect. A brick under static loading is not subjected to cyclic stresses.",
+        "d": "Incorrect. Fatigue requires repeated or fluctuating loading."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    }
+  ]
+}
